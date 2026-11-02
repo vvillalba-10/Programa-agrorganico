@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes somos - AgrOrgánico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<style>
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6'); 
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align  : right;
+            color: rgb(1, 8, 0);
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(249, 253, 249, 0);
+        }
+        .hero-quienes-somos {
+        background-color: #b5c0b5;
+        height: 60vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #333; 
+        position: relative;
+        overflow: hidden; 
+    }
+    .hero-quienes-somos h1 {
+        color: #000000;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 10px;
+        position: relative; 
+        z-index: 2;
+    }
+    .hero-quienes-somos p {
+        color: #000000;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        position: relative; 
+        z-index: 2;
+    }
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1; 
+    }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .card-feature {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgb(2, 0, 0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        padding: 30px;
+        background-color: #ffffff;
+    }
+    .card-feature:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .card-icon {
+        font-size: 3rem;
+        color: #042b16;
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+    }
+    .card-feature:hover .card-icon {
+        color: #1e412e;
+    }
+    .text-green-dark {
+        color: #2e8b57;
+    }
+    .section-separator {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .blockquote-footer {
+        margin-top: 10px;
+    }
+        .hero-quienes-somos h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-quienes-somos p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        .btn-main {
+            background-color: #0c180d;
+            color: #061306;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn-main:hover {
+            background-color: #0b140c;
+            color: #ffffff;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        .header-logo-text {
+            font-family: 'Georgia', serif;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="header-logo-text">AgrOrgánico</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes_somos.html">Quiénes somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="suelo.html">Suelo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="abonos.html">Abonos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seguimiento.html">Seguimiento</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <div class="hero-quienes-somos text-center">
+        <div class="container">
+            <h1>Nuestra Historia</h1>
+            <p>Descubre el corazón de AgrOrgánico y la pasión que nos mueve para cultivar un futuro más verde.</p>
+            <img src="imagenes/photo-1501004318641-b39e6451bec6.jpeg" alt="Historia de AgrOrgánico" class="hero-image">
+        </div>
+    </div>
+    <main class="container">
+        <section class="row g-4 text-center mt-5">
+            <div class="col-md-4">
+                <div class="card card-feature">
+                    <i class="bi bi-bullseye card-icon"></i>
+                    <h5 class="card-title text-green-dark">Nuestra Misión</h5>
+                    <p class="card-text text-muted">Sembrar tecnología y cosechar vida. En AgrOrgánico fusionamos la sabiduría del campo con la innovación digital para que cada cosecha respire sostenibilidad, cada suelo recupere su fuerza y cada agricultor sienta que su trabajo alimenta el futuro del planeta.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-feature">
+                    <i class="bi bi-eye card-icon"></i>
+                    <h5 class="card-title text-green-dark">Nuestra Visión</h5>
+                    <p class="card-text text-muted">Ser la plataforma líder para la agricultura orgánica, creando una comunidad vibrante donde el conocimiento se comparte libremente y la pasión por el cultivo sostenible crece cada día.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-feature">
+                    <i class="bi bi-geo-alt card-icon"></i>
+                    <h5 class="card-title text-green-dark">Nuestros Objetivos</h5>
+                    <p class="card-text text-muted">Nuestro objetivo es simple: el cuidado del planeta es nuestra responsabilidad colectiva. Cada pequeño esfuerzo cuenta, y juntos podemos asegurar un futuro más verde para las próximas generaciones.</p>
+                </div>
+            </div>
+        </section>
+        <section class="row justify-content-center section-separator">
+            <div class="col-md-8 text-center">
+                <blockquote class="blockquote">
+                    <p class="mb-0 display-6 text-success">"Sembrar salud, cosechar vida."</p>
+                    <footer class="blockquote-footer text-muted mt-2">La promesa de AgrOrgánico.</footer>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 AgrOrgánico. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
